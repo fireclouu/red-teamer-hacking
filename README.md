@@ -17,5 +17,8 @@ uses vm kali-linux
 - ASLR or Address Space Layout Randomization, randomizes memory everytime our program runs. disabling it helps predict the functions like `exit` fixed on memory layout, avoiding `segfaults`.
 - directly writing raw bytes is always needs to be remember. On `python3` im using `print` function which treats our input as `unicode` chars, instead of raw byte. I fail on these, took too much time before i get my first `ret2func` exploit after resolving these. im [following these tutorial](https://www.ired.team/offensive-security/code-injection-process-injection/binary-exploitation/rop-chaining-return-oriented-programming) and it uses python2.
 
+![001-my-first-exploit](documentation/001-my-first-exploit.png)
+*im happy seeing that string!*
+
 ## Resources
 - [ROP Chaining: Return Oriented Programming | Red Team Notes](https://www.ired.team/offensive-security/code-injection-process-injection/binary-exploitation/rop-chaining-return-oriented-programming)
