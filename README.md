@@ -20,5 +20,18 @@ uses vm kali-linux
 ![001-my-first-exploit](documentation/001-my-first-exploit.png)
 *im happy seeing that string!*
 
+## our cpu of interest
+right now im following a `ropchain` exploit being performed on `x86` cpu, similar to what i have as well, and forced to compiled as `32bit` program.  
+
+it is also essential for us to learn about the `cpu registers` just like how I did it on my first interpreter `intel 8080`. `EIP` is the instruction pointer, 
+General Purpose registers are `EAX` (used as accumulator), `EBX`, `ECX`, `EDX`.
+Pointer and index regs. are `ESP` (stack pointer), `EBP` (base ptr), `ESI` (source index), `EDI` (destination index)
+There are also Segment Registers and the Flags.
+
+With those above i'm already familiar with program counter (IP), general purpose regs, stack ptr., and flags. 
+Segemnt regs., base ptr, src. and dest. indexes are new to me.
+
+From what i understand, having `ESI/EDI` register allows more faster execution thanks to hardware-accelerated operation, decreasing cpu cycles, unlike old architecture which uses clever programming (but wasting too much cycle) when doing movement ops.
+
 ## Resources
 - [ROP Chaining: Return Oriented Programming | Red Team Notes](https://www.ired.team/offensive-security/code-injection-process-injection/binary-exploitation/rop-chaining-return-oriented-programming)
