@@ -33,5 +33,10 @@ Segemnt regs., base ptr, src. and dest. indexes are new to me.
 
 From what i understand, having `ESI/EDI` register allows more faster execution thanks to hardware-accelerated operation, decreasing cpu cycles, unlike old architecture which uses clever programming (but wasting too much cycle) when doing movement ops.
 
+# ROP Exploit
+i had to learn both languages once more: c and python3. I also learned ASLRs and how modern OS enforces these `memory randomization` feature. For now we just disable these. stdout and raw bytes gives me a brand new perspective too. For years I thought typed strings or characters are look or appear as it is, as if i didnt even know utf8 exist and interprets everything, and presents clean interpretation to end users. My currently following tutorial is at Python2 and i thought Pyton3's print is the same, and thanks to that and constant failure for basic simulation for exploit, I learned those quirks the hard way, but very interesting in terms of computing!
+
+
 ## Resources
 - [ROP Chaining: Return Oriented Programming | Red Team Notes](https://www.ired.team/offensive-security/code-injection-process-injection/binary-exploitation/rop-chaining-return-oriented-programming)
+
